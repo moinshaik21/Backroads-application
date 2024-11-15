@@ -2,7 +2,7 @@
 
 import React from "react";
 import Title from "./Title";
-import {tours} from "../data";
+import { tours } from "../data";
 const Tours = () => {
   return (
     <section className='section' id='tours'>
@@ -10,8 +10,7 @@ const Tours = () => {
 
       <div className='section-center featured-center'>
         {tours.map((tour) => {
-          const { id, image, date, title, info, location, cost, duration } =
-            tour;
+          const { image, date, title, info, location, cost, duration } = tour;
           return (
             <article className='tour-card'>
               <div className='tour-img-container'>
